@@ -1,0 +1,56 @@
+html,
+body {
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+.mobile-first {
+  display: flex;
+}
+.header-btn {
+  background: #ffdfa1;
+  box-shadow: 0px 9px 40px #ffedad;
+  border-radius: 99px;
+  color: #594662;
+  border: none;
+}
+
+a {
+  color: #b8b8b8 !important;
+}
+
+.only-mobile {
+  display: none;
+}
+
+/* For Mobile */
+@media screen and (max-width: 780px) {
+  header {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .row {
+    margin: 0 auto;
+  }
+  .header-btn {
+    display: none;
+  }
+  .mobile-first {
+    display: none !important;
+  }
+  .mobile-second {
+    display: block;
+    margin: 30px 0;
+    justify-content: center;
+  }
+  .only-mobile {
+    display: inline;
+  }
+  .logo {
+    margin: 50px 0;
+    display: inline-flex;
+  }
+  .logo img {
+    margin: 0 50px;
+  }
+}
